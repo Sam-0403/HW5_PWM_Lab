@@ -6,7 +6,7 @@ HW5_PWM_Lab
 本次實作內容包含：
 
 1. LED呼吸燈
-2. Complementary PWM with Dead Time Insertion（未能實際測試）
+2. Complementary PWM with Dead Time Insertion
 
 # 執行方式
 1. 在Mbed Studio中新增一個空白的專案
@@ -21,7 +21,6 @@ HW5_PWM_Lab
 
 ## 邏輯分析儀結果
 ![圖片一](./img/pwm1.jpeg)
-![圖片二](./img/pwm2.jpeg)
 ![圖片三](./img/pwm3.jpeg)
 我們實測到的為Duty Cycle正在下降時的波形
 由於我們將實測的PWM波形為**200Hz**，並且每兩個週期調整2%的佔寬比，而邏輯分析儀這端設置為**100kHz**（將每個波形分割為500格），因此我們可以看見每兩次波形後佔寬比變化為25格（300->275->250）。
